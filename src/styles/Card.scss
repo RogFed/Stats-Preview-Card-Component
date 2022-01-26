@@ -36,8 +36,9 @@
       display: block;
 
       @media screen and (min-width: 1025px) {
-        object-fit: cover;
+        width: 100%;
         height: 100%;
+        object-fit: cover;
       }
     }
   }
@@ -48,12 +49,20 @@
 
     @media screen and (min-width: 1025px) {
       text-align: left;
-      padding: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6rem 12rem 6rem 6rem;
     }
 
     & h1 {
       font-size: 2.5rem;
       margin-bottom: 2rem;
+
+      @media screen and (min-width: 1025px) {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+      }
 
       & span {
         color: var(--accent);
