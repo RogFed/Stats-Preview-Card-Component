@@ -1,0 +1,15 @@
+.Stat {
+  & > :first-child {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  & > :last-child {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--main-paragraph);
+    letter-spacing: 0.2rem;
+  }
+}
